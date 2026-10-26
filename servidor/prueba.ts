@@ -1,5 +1,5 @@
 // Prueba automática: dos clientes conversan contra el servidor local
-const URL_WS = Deno.args[0] ?? "ws://localhost:8000";
+const URL_WS = Deno.args[0] ?? "wss://chat-tics316.onrender.com";
 
 function cliente(nombre: string) {
   const ws = new WebSocket(URL_WS);
